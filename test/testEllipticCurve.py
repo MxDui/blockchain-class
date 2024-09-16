@@ -184,7 +184,7 @@ class TestEllipticCurve(unittest.TestCase):
         for e in eli:
             try:
                 # Lanzar exception si no se encuentra el punto de partida
-                eli[e].cofactor(Point(0,0))
+                eli[i].cofactor(Point(0,0))
                 self.assertFail()
             except:
                 pass
